@@ -7,12 +7,9 @@
 LDD_VERSION = '62a090003c2ed834735f921cb257c5806fefd9c8'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly# with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
-# LDD_SITE = git@github.com:cu-ecen-aeld/assignment-7-matheuschenrique.git
-# LDD_SITE_METHOD = git
-# LDD_GIT_SUBMODULES = YES
-
-LDD_SITE = $(BUILD_DIR)/ldd-$(LDD_VERSION)
-LDD_SITE_METHOD = local
+LDD_SITE = git@github.com:cu-ecen-aeld/assignment-7-matheuschenrique.git
+LDD_SITE_METHOD = git
+LDD_GIT_SUBMODULES = YES
 
 LDD_MODULE_MAKE_OPTS = KVERSION=$(LINUX_VERSION_PROBED)
 
